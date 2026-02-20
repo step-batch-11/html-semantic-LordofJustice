@@ -5,13 +5,13 @@
 }
 
 body {
-  /* width : 80vw;  */
-  margin : 0 auto;
   background-color: ghostwhite;
   font-family: system-ui;
 }
 
 nav {
+  position: sticky;
+  top : 0px;
   background-color: hsl(0, 2%, 63%);
   height: 40px;
   padding-left: 1.3em;
@@ -22,13 +22,15 @@ nav {
   gap : 2em;
 }
 
-
 main {
   height: auto;
   width: 100%;
-  background-color:rgb(231, 231, 231);
+  background-color: white;
   font-family: system-ui;
   display: flex;
+  padding-left: 5rem;
+  padding-top: 1.3rem;
+  gap : 5rem;
 }
 
 main > article {
@@ -64,12 +66,6 @@ header > p {
   font-size: 16px;
 }
 
-main article section {
-  padding: 1.5rem;
-  background-color: aliceblue;
-  margin-left: 30px;
-}
-
 section > p {
   padding: 0.5em 0;
 }
@@ -77,6 +73,39 @@ section > p {
 img {
   width:100%;
   height: auto;
+}
+
+main > article > section > figure > figcaption {
+  position: relative;
+  top: -4px;
+  height: 1.5em;
+  text-align: center;
+  background-color: #333;
+  color: whitesmoke;
+}
+
+main > article > section > details {
+  padding-top: 1.3em;
+  font-size: 20px;
+}
+
+details > summary {
+  font-size: 16px;;
+}
+
+section > h3 {
+  font-size: 30px;
+}
+
+article > footer > address > a {
+  color: #444;
+
+}
+
+body > footer {
+  text-align: center;
+  background-color: #888;
+  color: ghostwhite;
 }
 
 h1 {
@@ -90,8 +119,9 @@ h2 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 200;
+  line-height: 1.9 em;
 }
 
 a {
@@ -100,4 +130,3 @@ a {
   font-weight: 500;
   font-size: 20px;
 }
-
